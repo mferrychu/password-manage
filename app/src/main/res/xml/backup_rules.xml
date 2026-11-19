@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- allowBackup=false 已禁用全部备份，此处保持全 exclude 避免规则冲突 -->
+    <exclude domain="sharedpref" path="."/>
+</full-backup-content>

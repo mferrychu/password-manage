@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 正常App主题 -->
+    <style name="Theme.MyBox" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">#EADDFF</item>
+        <item name="android:statusBarColor">@color/status_bar_color</item>
+        <item name="android:navigationBarColor">@color/nav_bar_color</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:elevation">0dp</item>
+        <item name="android:outlineAmbientShadowColor">@android:color/transparent</item>
+        <item name="android:outlineSpotShadowColor">@android:color/transparent</item>
+    </style>
+
+    <!-- SplashScreen启动主题 -->
+    <style name="Theme.App.Splash" parent="Theme.SplashScreen">
+        <!-- 启动页背景色：浅紫色 #EADDFF -->
+        <item name="windowSplashScreenBackground">#EADDFF</item>
+        <!-- 窗口背景色：与主主题一致，确保多任务视图截图正确 -->
+        <item name="android:windowBackground">#EADDFF</item>
+        <!-- 启动页图标：使用应用图标 -->
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <!-- 初始化完成后切换到的主题 -->
+        <item name="postSplashScreenTheme">@style/Theme.MyBox</item>
+        <!-- 状态栏颜色与主主题一致，避免启动时闪烁 -->
+        <item name="android:statusBarColor">#EADDFF</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

@@ -1,0 +1,21 @@
+# Local configuration and secrets
+local.properties
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+
+# IDE and build output
+.gradle/
+.idea/
+**/build/
+app/release/
+*.apk
+*.aab
+*.hprof
+*.log
